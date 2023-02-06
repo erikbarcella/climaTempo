@@ -1,0 +1,11 @@
+<%- include('partials/head') %>
+      <h2>Busque a previsão do tempo na sua Cidade </h2> 
+
+      <div class="busca">
+        <p>Insira sua cidade para busca, separando o estado por virgula</p>
+        <form action="/buscaCidade/:city" method="get" >
+            <input type="text" name="city" id="city" placeholder="Insira o nome da cidade" required>
+            <button type="submit">Buscar</button>
+        </form>
+      </div>
+<%- include('partials/footer') %>

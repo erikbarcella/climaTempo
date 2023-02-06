@@ -1,0 +1,17 @@
+<%- include('partials/head') %>
+
+<h2>Minhas cidades salvas</h2>
+
+<%= favoritos.city %> 
+
+<% if(favoritos.length > 0) { %>
+    <% for(favorito of favoritos) {  %>
+        <a href="/buscaCidade/:city?city=<%=favorito.city%>"><p><%= favorito.city %></p></a>
+    <% } %>
+<% } else { %>
+    <h3>Sua lista está vazia.</h3>
+<% } %>
+
+<a href="/"><p id="voltar">Voltar</p></a>
+
+<%- include('partials/footer') %>

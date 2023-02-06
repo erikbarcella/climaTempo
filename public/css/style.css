@@ -1,0 +1,47 @@
+h2{
+    text-align: center;
+}
+
+
+.temp{
+    border: 2px solid black;
+    margin: 0 auto 20px auto;
+    width: 680px;
+    height: 205px;
+    text-align: left;
+   
+}
+
+.temp img{
+    float: right;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.busca{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px; 
+}
+
+.add{
+    float: inline-end;
+    margin-top: -10px;
+}
+
+.menu{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    margin-top: -15px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item-menu{
+    margin-right: 20px;
+}
