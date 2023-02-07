@@ -39,13 +39,11 @@ app.get('/favoritos', async(req, res) => {
 
 app.get("/buscaCidade/:city", async (req,res)=>{
     const {city} =req.query;
-    let city2 = city.normalize("NFD");
     await request(`https://api.hgbrasil.com/weather?key=${process.env.API_KEY}&city_name=${city}`, (error, response, body) => {
         if(!error && response.statusCode == 200){
             resposta = JSON.parse(body);
         }
         console.log(resposta);
-        console.log(city2);
         res.render("resultadoBusca", {resposta});
     });  
 })
