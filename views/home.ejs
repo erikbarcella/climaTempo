@@ -4,8 +4,11 @@
       <div class="busca">
         <p>Insira sua cidade para busca, separando o estado por virgula</p>
         <form action="/buscaCidade/:city" method="get" >
+           <div class="search">
             <input type="text" name="city" id="city" placeholder="Insira o nome da cidade" required>
+            <br>
             <button type="submit">Buscar</button>
+          </div>
         </form>
       </div>
 <%- include('partials/footer') %>

@@ -1,3 +1,8 @@
+body{
+    background: rgb(194,236,245);
+    background: linear-gradient(90deg, rgba(194,236,245,1) 0%, rgba(113,172,233,1) 35%, rgba(0,129,255,1) 100%);
+}
+
 h2{
     text-align: center;
 }
@@ -45,3 +50,27 @@ a{
 .item-menu{
     margin-right: 20px;
 }
+
+#city{
+    width: 250px;
+    height: 30px;
+    font-style: oblique;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#city:hover{
+    width: 250px;
+    height: 30px;
+    font-style: oblique;
+    background: rgba(255, 255, 255, 0.562);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+}
+
+

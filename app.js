@@ -35,7 +35,7 @@ app.get('/favoritos', async(req, res) => {
     res.render('favoritos', {favoritos});
 });
 
-//https://api.hgbrasil.com/weather?key=71a5fd47&city_name=Campinas,SP
+//https://api.hgbrasil.com/weather?key=_name=Campinas,SP
 
 app.get("/buscaCidade/:city", async (req,res)=>{
     const {city} =req.query;
