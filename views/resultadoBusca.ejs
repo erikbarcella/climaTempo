@@ -1,6 +1,4 @@
 <%- include('partials/head') %>
-
-
 <div class="temp">
     <img src="http://assets.api.hgbrasil.com/weather/images/<%=resposta.results.img_id%>.png" alt="">
     <p>Cidade: <%= resposta.results.city%> </p>
@@ -11,11 +9,7 @@
     
     <form action="/tempo/<%= resposta.results.city %>" method="post" class="add">
         <button class="adicionar">Adicionar à minha lista</button>
-        <button class="more">+ Previsões</button>
     </form>
-
+    <button class="more">+ Previsões</button>
 </div>
-
-
-
 <%- include('partials/footer') %>
